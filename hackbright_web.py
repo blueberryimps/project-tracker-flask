@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 
 @app.route("/student")
-def get_student():
-    """Show information about a student.""""
+def get_student()
+    """Show information about a student."""
 
     # Remember, the arguments for a GET request are a set of key/value pairs that
     # the user can send to the web server via the URL. An example URL with GET
