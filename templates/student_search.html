@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Tracker</title>
+</head>
+<body>
+
+    <!--Recall that the action tells the browser where to send the form values
+    when the user clicks submit. Here, it sends the form data to the first
+    handler we built earlier. That handler expects the student’s GitHub
+    username in the form of a key/value pair. The value is obviously whatever
+    the user types into the text field, but where is the key?
+    Remember, the key for a value input by a user is stored on the HTML
+    element as the name attribute. Whew. That was a mouthful.-->
+    <form action="/student">
+      <h1>Search for Student</h1>
+      <label>Enter GitHub username:
+        <input type="text" name="github">
+      </label>
+      <!--Remember, the key for a value input by a user is stored on the HTML 
+      element as the name attribute.
+      This HTML tag displays a text field for the user to type in. The name
+      attribute on the tag specifies the key that will be used for the value
+      when the form is submitted. If that’s unclear, try entering a value then
+      submitting the form. Inspect the URL request arguments on the next page.
+      Go back, change the name attribute, submit again, and inspect the URL
+      again and see how they’ve changed.-->
+      <input type="submit" value="Display Student">
+      <br>
+      <br>
+      <br>
+      
+    </form>
+    <form action="/student-add" method='POST'>
+      <h1>Add New Student</h1>
+      <label>Add new student first name:
+        <input type="text" name="first"><br><br>
+      </label>
+      <label>Add new student last name:
+        <input type="text" name="last"><br><br>
+      </label>
+      </label>
+      <label>Add new student GitHub username:
+        <input type="text" name="github"><br><br>
+      </label>
+      </label>
+      <input type="submit" value="Submit New Student">
+    </form>
+
+</body>
+</html>
